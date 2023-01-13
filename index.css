@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: black;
+    width: 1350px;
+    height: 500px;
+}
+h1{
+    text-align: center;
+    background-color: aliceblue;
+    /* text-decoration: aliceblue; */
+}
+.div{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    transition: all 2s;
+}
+.div:hover{
+    width: 300px;
+    transition-timing-function: ease-in-out;
+}
+.first{
+    background-color: rgb(3, 45, 45);
+    width: 150px;
+    height: 150px;
+    box-shadow: 10px 10px 0px 0px  white;
+    border-radius: 40%;
+    margin: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content:center;
+    
+}
+
+    
+.skew1{
+    animation: rotation 4s ease-in-out infinite;
+    background-color: cadetblue;
+}
+@keyframes rotation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* @media (min-width: 480px){
+    .main{
+        flex-direction: column;
+    }
+    
+} */
